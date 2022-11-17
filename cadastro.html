@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Shopping InfoCena - Cadastro</title>
+
+    <!--
+    #-----------------------------------------------------
+    # Descricao do problema:
+    Crie a página "cadastro.html
+    Terá um título com o texto: Cadastre-se para receber nossas ofertas de aluguel
+
+    Crie um formuário com os seguintes campos:
+    Nome => Campo texto normal
+    E-mail ==> Campo tipo email
+    Data de nascimento ==> Campo tipo data
+    Estado ==> Select com os valores 
+    Rio de Janeiro,
+    São Paulo,
+    Minas Gerais
+    Espírito Santo
+    Interesses ==> Select com os seguintes valores
+    Games,
+    Tecnologia,
+    Telefonia)
+
+    Um botão Submit com o valor "Enviar"
+    Um botão Reset com o valor "Limpar"
+
+    Lembre-se que essa página deverá possuir todos os links
+    dos exercicíos anterior e deverá aparecer quando o usuário
+    clicar no link "Cadastre-se.
+    #-----------------------------------------------------
+    --> 
+    <script>
+
+  
+                // Limpar o form (a pagina) após o inclusão
+                limparCampo("Nome");
+                limparCampo("Email")
+                limparCampo("Nascimento");
+                limparCampo("Estado");
+                limparCampo("Interesse");
+
+                // Depois que cadastrar, chama a funcao inicio que vai colocar o cursor no campo Nome
+                inicio()
+
+
+        function limparCampo(nomeDoCampo)
+                {
+                    document.getElementById(nomeDoCampo).value = "";
+                }
+    
+   
+        
+
+        /*
+        # - Função que vai colocar o cursor no campo Nome
+        */
+        function inicio()
+            
+            { 
+                document.getElementById("Nome").focus();
+            }   
+            
+ </script>
+</head>
+<body onload="inicio()">
+
+        <a href="index.html">Inicio</a>
+        <a href="quem_somos.html">Quem Somos</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="lojas.html">Lojas</a>
+        <a href="produtos.html">Produtos</a>
+        <a>cadastro.html</a></p>
+
+        <h1>Cadastre-se para receber nossas ofertas</h1>
+        <!-- 
+            <form method="post" action="processa.php"> 
+        -->
+
+        <div>
+        <input type="text" id="Nome" name="nome"
+            placeholder="Nome"/>
+        </div>
+
+        <div>
+        <input type="email" id="Email" name="email"
+            placeholder="Email"/>
+        </div>
+
+        <div>
+        <input type="data" id="Nascimento" name="nascimento"
+            placeholder="Data do nascimento"/>
+        </div>
+
+        <div>
+            <label for="Estado">Estado:</label>
+            <select id="Estado" name="estado">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Interesse">Interesse em:</label>
+            <select id="Interesse" name="interesse">
+                <option value="Games">Games</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Telefonia">Telefonia</option>
+            </select>
+        </div>
+
+        
+        <input type="submit" value="Cadastrar" />
+        <input type="reset"  value="Limpar"  onclick="limpar"/>
+
+        </form>
+</body>
+</html>

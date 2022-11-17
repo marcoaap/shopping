@@ -1,0 +1,55 @@
+h1{ 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+img{
+    height: 50px; 
+}
+
+body{
+    background-color: rgb(17,169,91) ;
+}
+
+div{
+    margin-top: 20px;
+    margin-left 15px: ;
+}
+
+input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea{   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    margin-top: 30px;
+    text-align: center;
+}
+
+table{
+    border: 2px #00ffff solid;
+}
+
+td{
+    border: 1px #00fff0 solid
+}
+/*
+#-------------------------------------#
+# Definicao de classe use . (ponto)   #
+#-------------------------------------#
+*/
+.pagina-principal{
+    height: 200px;
+}
+
+/*
+#-------------------------------------#
+# Definicao de id utilize # (tralha)  #
+#-------------------------------------#
+*/
+#imagem-jogo{
+    width: 200px;
+}
+

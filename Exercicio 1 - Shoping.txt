@@ -1,0 +1,56 @@
+0) Crie uma pasta chamada "shopping"
+
+Todas as páginas deverão ter o menu
+1)	index.html
+A página terá links para 
+Quem Somos => quem_somos.html
+Alugue sua Loja	=> aluguel.html
+Lojas => lojas.html
+Produtos => produtos.html
+Cadastre-se 
+
+
+H1 => Seja bem vindo ao nosso shopping InfoCena
+<p> Aqui você encontrará tudo o que precisa em matéria de tecnologia
+
+2)	quem_somos.html
+Quem somos => h1
+O InfoCena é um shopping cuja a atividade principal é a administração e a locação de stands, lojas e quiosques. A comercialização de produtos/serviços é de inteira responsabilidades dos lojistas. => p
+
+Se você está em busca de um determinado produto faça sua procura na página de Produtos, escolha seu produto e clique para saber mais informações sobre ele e sobre a loja a qual ele está disponível. =>
+
+3)	aluguel.html
+Alugue sua loja => h1
+Um formulário com os seguintes campos
+Nome: 
+Email: 
+Telefone Fixo: 
+Telefone Celular: 
+Mensagem
+
+
+
+4)	Lojas.html  
+
+<p>Info Computer</p>		
+<p>Loja do Juca</p>		
+<p>Recarga Aqui</p>		
+<p>Game House</p>		
+
+Todos os itens como parágrafo
+
+5)	produtos.html
+
+Processador Intel i3	
+Processador Intel i5	
+Processador Intel i7	
+Placa-mãe		
+Headset		
+Notebook Dell		
+Notebook Samsung	
+iPhone			
+PS4			
+Fifa 18			
+Impressora HP		
+
+todos os itens como p

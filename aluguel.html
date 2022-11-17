@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Shopping InfoCena - Aluguel</title>
+    <script>
+
+        var cadastro = [];
+        /* 
+        # ------------------------------------------------# 
+        # Funcoes                                         * 
+        # ------------------------------------------------# 
+        */
+
+        function valida(n, e, tf, tc, m)
+            {
+                //alert(m + "\n" + a + "\n" + v +"\n" + c);
+                var valido = true;
+                var mensagem = "";
+                if ( n == "")
+                { 
+                    mensagem += "Nome é Obrigatório\n";
+                    valido = false;
+                }
+                if ( e == 0)
+                { 
+                    mensagem += "Email é Obrigatório\n";
+                    valido = false;
+                }
+                if ( tf == 0)
+                { 
+                    mensagem += "Telefone Fixo é Obrigatório\n";
+                    valido = false;
+                }
+                if ( tc == 0)
+                { 
+                    mensagem += "Telefone Celular é Obrigatório\n";
+                    valido = false;
+                }
+                if ( m == "")
+                { 
+                    mensagem += "Mensagem é Obrigatório\n";
+                    valido = false;
+                }
+
+                if ( valido == false)
+                {
+                    alert(mensagem)
+                }
+                return valido;
+
+            }
+        function cadastrar()
+            {
+
+                // Recebe as inputs
+                var Nome = document.getElementById("Nome").value;
+                var Email = document.getElementById("Email").value;
+                var TelefoneFixo = Number(document.getElementById("TelefoneFixo").value);
+                var TelefoneCelular = Number(document.getElementById("TelefoneCelular").value);
+                var Mensagem = document.getElementById("Mensagem").value;
+
+                /*
+                #--------------------------------------------------
+                # JSON - Definição
+                #--------------------------------------------------
+                */
+                // Forma 1 de criar um objeto json
+                // Se  function valida for verdadeira executa o cadastro e lista
+
+                // Obs. A chamada da função valida poderia passar o json ao inves
+                // dos 4 TelefoneFixoes
+
+                if (valida (Nome, Email, TelefoneFixo, TelefoneCelular, Mensagem) == true)
+                {
+                    var cliente = {};
+                    cliente["Nome"] = Nome;
+                    cliente["Email"] = Email;
+                    cliente["TelefoneFixo"]   = TelefoneFixo;
+                    cliente["TelefoneCelular"]   = TelefoneCelular;
+                    cliente["Mensagem"]   = Mensagem;
+
+                // Alimenta o vetor
+                cadastro.push(cliente);
+
+                listar()
+
+                // Limpar o form (a pagina) após o inclusão
+                limparCampo("Nome");
+                limparCampo("Email")
+                limparCampo("TelefoneFixo");
+                limparCampo("TelefoneCelular");
+                limparCampo("Mensagem");
+
+                // Depois que cadastrar, chama a funcao inicio que vai colocar o cursor no campo Nome
+                inicio()
+               } 
+            }
+
+        function limparCampo(nomeDoCampo)
+                {
+                    document.getElementById(nomeDoCampo).value = "";
+                }
+    
+        function listar()
+            {
+                
+                var saida = "<tr>" +
+                            "<td>Nome</td>" +
+                            "<td>Email</td>" +
+                            "<td>TelefoneFixo</td>" +
+                            "<td>TelefoneCelular</td>" +
+                            "<td>Mensagem</td>" +
+                            "</tr>"
+
+                for ( var i=0; i < cadastro.length ; i++)
+                {
+                    
+
+                    saida += "</tr>"; 
+                    
+                    // O indice aponta para o vetor em que cada ocorrencia é um objeto json.
+                    // Assim posso fazer referencia ao vetor com os mesmos campos do json.
+                    
+                    saida += "<td>" + cadastro[i].Nome + "</td>";
+                    saida += "<td>" + cadastro[i].Email + "</td>";
+                    saida += "<td>" + cadastro[i].TelefoneFixo + "</td>";
+                    saida += "<td>" + cadastro[i].TelefonCelular + "</td>";
+                    saida += "<td>" + cadastro[i].Mensagem + "</td>";
+              
+                    saida += "</tr>"; 
+
+                }
+
+                // Atribui ao innerHTML o conteúdo de saida
+                document.getElementById("dados").innerHTML = saida ;
+            }
+        
+        
+
+        /*
+        # - Função que vai colocar o cursor no campo Nome
+        */
+        function inicio()
+            
+            { 
+                document.getElementById("Nome").focus();
+            }   
+            
+ </script>
+</head>
+<body onload="inicio()">
+
+        <a href="index.html">Inicio</a>
+        <a href="quem_somos.html">Quem Somos</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="lojas.html">Lojas</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="cadastro.html">Cadastro</a>
+        
+        <h1>Alugue sua loja</h1>
+        <form method="post" action="processa.php">
+        <div>
+        <input type="text" id="Nome" name="nome"
+            placeholder="Nome"/>
+        </div>
+
+        <div>
+        <input type="email" id="Email" name="email"
+            placeholder="Email"/>
+        </div>
+
+        <div>
+        <input type="tel" id="TelefoneFixo" name="fixo"
+            placeholder="TelefoneFixo"/>
+        </div>
+        
+        <div>
+        <input type="tel" id="TelefoneCelular" name="celular"
+            placeholder="TelefoneCelular"/>
+        </div>
+
+        <!-- No radio os nomes tem que ser iguais para ser uma coisa ou outra -->
+        <div>
+        <label>Sexo</label>
+        <input type="radio" id="Sexo" name="sexo"
+            value="M"/>Masculino
+        <input type="radio" id="Sexo" name="sexo"
+            value="F"/>Feminino
+        </div>
+
+        <div>
+
+        <!-- 
+        # O value no checkbox é o valor que será enviado no GET ou POST 
+        -->
+         
+        <label>Estilo de loja</label>
+        <input type="checkbox" id="Estilo" name="estilo[]"
+            value="L" />Loja
+        <input type="checkbox" id="Estilo" name="estilo[]"
+            value="Q" />Quiosque
+        <input type="checkbox" id="Estilo" name="estilo[]"
+            value="S" />Stand
+        </div>
+        
+        <!-- Tentativa do Marco para mandar tudo junto 
+        <label>Estilo de loja</label>
+        <input type="checkbox" id="Estilo" name="estilo"
+            value="L" />Loja
+        <input type="checkbox" id="Estilo" name="estilo"
+            value="Q" />Quiosque
+        <input type="checkbox" id="Estilo" name="estilo"
+            value="S" />Stand
+        </div>
+        -->
+
+        <div>
+            <label for="cidade"> Cidade:</label>
+            <select id="cidade" name="cidade">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="NI">Nova Iguaçu</option>
+                <option value="SJM">São João de Meriti</option>
+                <option value="DC">Duque de Caxias</option>
+            </select>
+        </div>
+
+        <!--
+        <div>
+        <input type="text" id="Mensagem"
+            placeholder="Mensagem"/>
+        </div> 
+        -->
+
+        <div>
+        <textarea id="Mensagem" cols="20" rows="10" name="mensagem"
+                placeholder="Mensagem"></textarea>
+        </div> 
+
+        <input type="submit" value="ok" />
+        <input type="reset"  value="Limpar" />
+
+        </form>
+        <!--
+        <input type="button" 
+             value="Cadastrar" onclick="cadastrar()"/>
+
+        <input type="button" 
+             value="Listar" onclick="listar()"/>
+        -->
+        
+        <!--
+        <table id="dados" border='1' width="50%">
+        <tr>
+            <td width="25%" align=center>Nome</td>
+            <td width="25%" align=center>Email</td>
+            <td width="25%" align=center>TelefoneFixo</td>
+            <td width="25%" align=center>TelefoneCelular</td>
+            <td width="25%" align=center>Mensagem</td>
+            
+        </tr>
+    </table>
+
+        -->
+
+</body>
+</html>
