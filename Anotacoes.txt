@@ -1,0 +1,102 @@
+
+https://www.rj.senac.br/cursos/ti-e-informatica/programacao-em-python/
+
+Principais conhecimentos adquiridos com o curso:
+
+    Lógica de programação
+    Ferramenta MakeCode da Minecraft Education
+    Estruturas de Controle, Vetor, Matriz, Testes e Java Script
+    Linguagem de marcação de conteúdo e estilo
+    Padrões de usabilidade e responsividade
+    Estrutura de código com linguagem de programação back-end
+    Framework de desenvolvimento ágil e multicamadas: Django
+    Integração com bando de dados em aplicações web
+
+===================================================================================
+UC - LOGICA DE PROGRAMAÇÃO
+INICIO: 03/10/2022
+FIM: 04/11/2022
+===================================================================================
+Aula 1 - Inicio (Coordenadou falou)
+Aula 2 - 18h30 (Isis falou) / 21h30 *Pediram para não ter intervalo
+Aula 3 - 18h10 / 21h45
+Aula 4 - 18h10 / 21h45
+** 12/10/2022 - Feriado Nsra Aparecida
+Aula 5 - 18h30 (Chegou 18h27) / 21h45
+Aula 6 - 18h15 (Chegou 18h03) / 21h50
+Aula 7 - 18h18 (Chegou 18h12) / 21h?? (Eu saí às 21h jogo do Flamengo)
+Aula 8 - 18h25 (Chegou 18h15) / 21h35
+Aula 9 - 18h12 (Chegou 18h09) / 21h30
+Aula 10 - 18h08 (Chegou 18h03) / 21h46
+** 28.10.2022 - Não houve aula - Professor cancelou
+Aula 11 - 18h15 (Chegou 18h?? - Cheguei depois) / 21h45
+** 02.11.2022 - Feriado Corpus Christi
+Aula12 - 18h15 (Chegou 18h?? - Cheguei depois) / 21h40
+
+
+
+Javascript : The Curious Case of Null >= 0
+https://blog.campvanilla.com/javascript-the-curious-case-of-null-0-7b131644e274
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Howto
+
+chamar shell script do html
+https://stackoverflow.com/questions/6235785/run-a-shell-script-with-an-html-button
+
+Entender melhor a método sort.
+https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a 
+
+Programado full stack
+https://ebaconline.com.br/full-stack-python?utm_source=google&utm_medium=cpc&utm_campaign=course_57_profession-python_google_search_all_conversions_all&utm_content=c_13452554084|adg_122850301189|ad_541162775665|ph_kwd-336576202302|key_programador%20full%20stack|dev_c|pst_|rgnid_1001655|placement_&gclid=EAIaIQobChMI_Oagz4id-wIVvRPUAR3RagW1EAAYAyAAEgLnJvD_BwE
+
+Acervo Lima (***)
+https://acervolima.com/category/python/
+
+https://www.thegeekdiary.com/how-to-set-x11-forwarding-export-remote-display-for-users-who-switch-accounts-using-sudo/
+
+Qual a diferença entre id e class?
+https://www.alura.com.br/artigos/qual-diferenca-entre-id-e-class?gclid=EAIaIQobChMIrriVs6Ci-wIVCtORCh3PfwtVEAAYASAAEgJBCfD_BwE
+
+Aula 03 - UC2
+HTML Input Types
+https://www.w3schools.com/html/html_form_input_types.asp
+
+Usando checkbox no html que será passado para o processa.php 
+A solução do professor foi armazernar o checkbox em array e o php varre esse array
+Aqui no site abaixo o mesmo problema
+https://stackoverflow.com/questions/4554758/how-to-read-if-a-checkbox-is-checked-in-php
+
+===================================================================================
+UC2 - FRONT END
+INICIO: 07/11/2022
+FIM: / /2023 
+
+https://pt.surveymonkey.com/r/UCsPHP
+https://getbootstrap.com/
+
+Download git
+https://git-scm.com/
+===================================================================================
+Aula 01 - 18h35 (veio gente do administrativo na sala) / 21h40
+Aula 02 - 18h35 (chegou 18h25) / 21h35
+Aula 03	- 18h25 (chegou 18h15) / 22h
+Aula 04	- 18h35 (O coordenador apareceu) (chegou 18h20) / 21h30
+Aula 05	- 18h?? (Eu cheguei atrasado na aula) (chegou 18h??) / 21h
+
+
+
+…or create a new repository on the command line
+echo "# shopping" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/marcoaap/shopping.git
+git push -u origin main
+
+Clone -------------------------------------------------------------------------
+git clone https://github.com/marcoaap/shopping.git
+
