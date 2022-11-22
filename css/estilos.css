@@ -35,13 +35,17 @@ table{
 td{
     border: 1px #00fff0 solid
 }
+
+nav{
+    background-color: #42e257;
+}
 /*
 #-------------------------------------#
 # Definicao de classe use . (ponto)   #
 #-------------------------------------#
 */
 .pagina-principal{
-    height: 200px;
+    /* height: 200px !important; */
 }
 
 /*

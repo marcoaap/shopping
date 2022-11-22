@@ -17,10 +17,16 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">  -->
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <!-- Cores do navbar: 
+            https://getbootstrap.com/docs/5.0/utilities/background 
+            https://www.geeksforgeeks.org/how-to-change-navigation-bar-color-in-bootstrap/ 
+        -->
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">InfoCena</a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!-- formato do icone do botao que são 3 linhas -->
         </button>
     
         <div class="collapse navbar-collapse" id="navbarCollapse"> 
@@ -37,13 +43,24 @@
       </div>
     </nav>
     
-    <main>
+    <main class="container">
         <h1>Seja bem-vindo ao nosso shopping InfoCena</h1>
         <p>Aqui você encontrará tudo o que precisa em matéria de tecnologia</p>
 
-        <img src="imagens/computador2.webp" class="pagina-principal"/>
-        <img src="imagens/celulares.webp" class="pagina-principal"/>
-        <img src="imagens/joystick.jpg" class="pagina-principal"/>
+        <div class="row">
+          <div class="col-md text-center">
+            <img src="imagens/computador2.webp" class="pagina-principal"/>      
+          </div>
+
+          <div class="col-md text-center">
+            <img src="imagens/celulares.webp" class="pagina-principal"/>        
+          </div>
+
+          <div class="col-md text-center">
+            <img src="imagens/joystick.jpg" class="pagina-principal"/>          
+          </div>
+
+        </div>
     </main>
    
 </body>
