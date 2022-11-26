@@ -60,3 +60,7 @@ nav{
 .campo-menor{
     width: 200px !important; 
 }
+
+.btn-primary{
+    background-color: #34e234 !important;
+}
